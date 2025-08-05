@@ -1,0 +1,32 @@
+Systematic strategy to solve coding problems
+1. State the problem clearly. Identify input and output formats
+Tips: 
+- Name function appropriately and think carefully about the signature
+- Discuss problem with interviewer if you are unsure how to frame it in abstract terms
+- Use descripive variable names, otherwise you may forget what a variable represents
+
+2. Come up with some example inputs & outputs. Try to cover all edge cases
+
+3. Come up with a correct solution for problem. State it in plain english
+- first aim for correctness, then efficiency
+- first solution can be brute force, ex: searching element by element through a list(linear search algorithm)
+- always try to write down the down the steps in your own words
+
+4. Implement the solution and test it used example inputs. Fix bugs, if any
+- use print statements to debug
+
+5. Analyze algorithm's complexitiy and identify inefficiencies, if any
+- Complexity: measure of amount of time & space required by an algorithm for an input of given size
+- Time complexity: how long it takes to run the algorithm
+- Space complexity: how much memory it uses
+- Big O notation: describes the upper bound of an algorithm's complexity, worst case scenario
+  - O(1): constant time, does not depend on input size
+  - O(log n): logarithmic time, grows slower than linear time
+  - O(n): linear time, grows proportionally to input size
+  - O(n log n): linearithmic time, common in efficient sorting algorithms
+  - O(n^2): quadratic time, common in algorithms with nested loops
+  - O(2^n): exponential time, grows very quickly with input size
+
+6. Apply the right technique to improve the solution, repeat steps 3 to 6
+Common techniques:
+- Binary Search: searching a sorted list by repeatedly dividing the search interval in half
