@@ -123,3 +123,26 @@ print(sorted(z))
 
 z = ("kevin", "niklas", "jenny")
 print(sorted(z, key=lambda k: k[1]))
+
+
+# index(item) - return index of first occurence of an item
+
+x = "bug"
+print(x.index("u"))
+
+# list
+y = ["pig", "cow", "horse"]
+print(y.index("cow"))
+
+
+# tuple
+
+z = ("kevin", "niklas", "jenny")
+print(z.index("jenny"))  # remember case sensitive
+
+
+# unpacking - unpack the n items of a sequence into n variables
+
+x = ["pig", "cow", "horse"]
+a, b, c = x
+print(a, b, c)
