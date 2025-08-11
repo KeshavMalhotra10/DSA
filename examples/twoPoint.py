@@ -201,22 +201,18 @@ def large_contain_brute_force(heights):
 
 def largest_container(height):
     n = len(height)
+    max_water = 0
 
     left, right = 0, n - 1
-    max_water = min(height[left], height[right]) * (right - left)
 
     while left < right:
+        water = min(height[left], height[right]) * (right - left)
+        max_water = max(max_water, water)
         if height[left] < height[right]:
             left += 1
-            water = min(height[left], height[right]) * (right - left)
-            max_water = max(max_water, water)
         elif height[left] > height[right]:
             right -= 1
-            water = min(height[left], height[right]) * (right - left)
-            max_water = max(max_water, water)
         elif height[left] == height[right]:
             left += 1
             right -= 1
-            water = min(height[left], height[right]) * (right - left)
-            max_water = max(max_water, water)
     return max_water
